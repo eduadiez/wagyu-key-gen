@@ -27,6 +27,7 @@ const QuietText = styled(Typography)`
 const KeysCreated: FC<KeysCreatedProps> = (props): ReactElement => {
 
   const openKeyLocation = () => {
+    /*
     window.bashUtils.findFirstFile(props.folderPath, "keystore")
       .then((keystoreFile) => {
         let fileToLocate = props.folderPath;
@@ -35,6 +36,7 @@ const KeysCreated: FC<KeysCreatedProps> = (props): ReactElement => {
         }
         window.electronAPI.shellShowItemInFolder(fileToLocate);
     });
+    */
   }
 
   return (

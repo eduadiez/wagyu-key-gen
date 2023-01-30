@@ -47,6 +47,7 @@ const MnemonicImport: FC<Props> = (props): ReactElement => {
 
       setStep(step + 1);
 
+      /*
       window.eth2Deposit.validateMnemonic(props.mnemonic).then(() => {
         props.onStepForward();
       }).catch((error) => {
@@ -54,7 +55,7 @@ const MnemonicImport: FC<Props> = (props): ReactElement => {
         const errorMsg = ('stderr' in error) ? error.stderr : error.message;
         setMnemonicError(true);
         setMnemonicErrorMsg(errorMsg);
-      })
+      })*/
       
     }
   }

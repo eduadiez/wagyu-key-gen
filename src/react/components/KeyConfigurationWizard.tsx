@@ -130,14 +130,14 @@ const KeyConfigurationWizard: FC<Props> = (props): ReactElement => {
     } else {
       setNumberOfKeysError(false);
     }
-    
+
     if (props.password.length < 8) {
       setPasswordStrengthError(true);
       isError = true;
     } else {
       setPasswordStrengthError(false);
     }
-    
+
     if (props.keyGenerationStartIndex < 0) {
       setStartingIndexError(true);
       isError = true;
@@ -145,13 +145,14 @@ const KeyConfigurationWizard: FC<Props> = (props): ReactElement => {
       setStartingIndexError(false);
     }
 
+    /*
     if (!window.web3Utils.isAddress(props.withdrawalAddress)) {
       setWithdrawalAddressFormatError(true);
       isError = true;
     } else {
       setWithdrawalAddressFormatError(false);
     }
-
+    */
     if (!isError) {
       setStep(step + 1);
     }
@@ -167,7 +168,7 @@ const KeyConfigurationWizard: FC<Props> = (props): ReactElement => {
   }
 
   const content = () => {
-    switch(step) {
+    switch (step) {
       case 0: return (
         <KeyInputs
           numberOfKeys={props.numberOfKeys}

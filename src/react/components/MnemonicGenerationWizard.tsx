@@ -110,6 +110,7 @@ const MnemonicGenerationWizard: FC<Props> = (props): ReactElement => {
     setGenerateError(false);
     setGenerateErrorMsg("");
 
+    /*
     window.eth2Deposit.createMnemonic('english').then((mnemonic) => {
       props.setMnemonic(mnemonic);
     }).catch((error) => {
@@ -118,6 +119,7 @@ const MnemonicGenerationWizard: FC<Props> = (props): ReactElement => {
       setGenerateError(true);
       setGenerateErrorMsg(errorMsg);
     })
+    */
   }
 
   const content = () => {

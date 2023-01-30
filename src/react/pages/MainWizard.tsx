@@ -71,7 +71,7 @@ const Wizard: FC<WizardProps> = (props): ReactElement => {
   
   const onStepForward = () => {
     if (activeStepIndex === stepSequence.length - 1) {
-      window.electronAPI.ipcRendererSendClose();
+      //window.electronAPI.ipcRendererSendClose();
       return;
     }
     setActiveStepIndex(activeStepIndex + 1);

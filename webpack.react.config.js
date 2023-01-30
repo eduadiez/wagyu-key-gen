@@ -60,6 +60,5 @@ module.exports = {
       BRANCH: JSON.stringify(gitRevisionPlugin.branch()),
       LASTCOMMITDATETIME: JSON.stringify(gitRevisionPlugin.lastcommitdatetime()),
     })
-  ],
-  target: 'electron-renderer'
+  ]
 };

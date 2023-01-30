@@ -60,7 +60,7 @@ const ShowMnemonic: FC<ShowMnemonicProps> = (props): ReactElement => {
   };
 
   const copyMnemonic = () => {
-    window.electronAPI.clipboardWriteText(props.mnemonic);
+    //window.electronAPI.clipboardWriteText(props.mnemonic);
     setCopied(true);
   };
 

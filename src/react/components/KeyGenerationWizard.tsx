@@ -90,6 +90,7 @@ const KeyGenerationWizard: FC<Props> = (props): ReactElement => {
           setFolderError(false);
           setFolderErrorMsg("");
 
+          /*
           window.bashUtils.doesDirectoryExist(props.folderPath)
             .then((exists) => {
               if (!exists) {
@@ -109,6 +110,7 @@ const KeyGenerationWizard: FC<Props> = (props): ReactElement => {
                   });
               }
             });
+          */
 
         } else {
           setFolderError(true);
@@ -141,6 +143,7 @@ const KeyGenerationWizard: FC<Props> = (props): ReactElement => {
       withdrawalAddress = "0x" + withdrawalAddress;
     }
 
+    /*
     window.eth2Deposit.generateKeys(
       props.mnemonic,
       props.keyGenerationStartIndex!,
@@ -156,7 +159,7 @@ const KeyGenerationWizard: FC<Props> = (props): ReactElement => {
       const errorMsg = ('stderr' in error) ? error.stderr : error.message;
       setFolderErrorMsg(errorMsg);
     })
-
+    */
   }
 
   const content = () => {

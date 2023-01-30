@@ -1,5 +1,5 @@
 import { Button, Grid, Typography } from '@material-ui/core';
-import { OpenDialogOptions, OpenDialogReturnValue } from 'electron';
+//import { OpenDialogOptions, OpenDialogReturnValue } from 'electron';
 import React, { FC, ReactElement, Dispatch, SetStateAction } from 'react';
 
 type SelectFolderProps = {
@@ -23,11 +23,13 @@ const SelectFolder: FC<SelectFolderProps> = (props): ReactElement => {
   const chooseFolder = () => {
     props.setFolderError(false);
 
+    /*
     const options: OpenDialogOptions = {
       properties: ['openDirectory']
-    };
+    };*/
 
     props.setModalDisplay(true);
+    /*
     window.electronAPI.invokeShowOpenDialog(options)
       .then((value: OpenDialogReturnValue) => {
         if (value !== undefined && value.filePaths.length > 0) {
@@ -39,6 +41,7 @@ const SelectFolder: FC<SelectFolderProps> = (props): ReactElement => {
       .finally(() => {
         props.setModalDisplay(false);
       });
+    */
   }
 
   return (
